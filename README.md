@@ -64,5 +64,6 @@ Rodapé:
 - Botões "Saiba Mais" em cada seção.
 - Links para as redes sociais com frases que incentivem o acompanhamento.
 <br>
+<p><strong> Entrega: </strong></p>
 <p>- A entrega foi feita conforme o solicitado pela a Agência Colors, entregue em formato HTML e CSS, O código otimizado para SEO.</p>
 <p>- Entregue em 08/10/2024, como solicitado.</p>
