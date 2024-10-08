@@ -61,7 +61,8 @@ Rodapé:
 <p><strong>Chamadas para Ação:</strong></p>
 <br>
 
--Botões "Saiba Mais" em cada seção.
--Links para as redes sociais com frases que incentivem o acompanhamento.
+- Botões "Saiba Mais" em cada seção.
+- Links para as redes sociais com frases que incentivem o acompanhamento.
 <br>
-<p>a entrega foi feita conforme o solicitado pela a Agência Colors, entregue em formato HTML e CSS, O código otimizado para SEO.</p>
+<p>-a entrega foi feita conforme o solicitado pela a Agência Colors, entregue em formato HTML e CSS, O código otimizado para SEO.</p>
+<p>-Entregue em 08/10/2024, como solicitado.</p>
