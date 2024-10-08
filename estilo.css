@@ -1,0 +1,212 @@
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:whgt@600;700&display=swap');
+
+    /* Significa tudo */
+    *, *::after, *::before {
+        box-sizing: border-box;
+        scroll-padding: 120px; /* Permitir uma distância quando se clica Nav a */
+    }
+
+    html {
+        font-size: 18px;/* (! importatant) Pode ser usado para fazer uma regra prevalecer */
+        scroll-behavior: smooth; /* Permite transição suave quando se clica Nav a */
+
+    }
+
+    body{
+        margin:0;
+        padding:0;
+        font-family: 'Merriweather' , serif;
+
+    }
+
+    /* Para tornar site responsivo 1° Elemento */
+    img, iframe, video {
+        max-width: 100%;
+    }
+
+    h1{
+        font-family: 'oswald', sans-serif;
+        font-size: 3rem; /* Faz ele ser 3x o valor do elemento raiz (html) 3x 18px */
+
+    }
+
+    header{
+        background-color: #fff;
+        text-align: center;
+        position: sticky; /* Fixa o menu no topo */
+        top:0 /* Necessaário para sticky funcionar */
+    }
+        
+    
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-family: 'Oswald', sans-serif;
+        font-weight: normal;
+        padding: .5rem .6rem; /* Aumento a área de clique dos elementos Nav a */
+        transition: all .8s; /* Permite trasição suave ao posicionar o mouse sobre */
+    }
+
+    nav a:hover {
+        color: rgb(255, 238, 60);
+        background-color: #000;
+    }
+
+    main, section{
+        height: 73vh;
+        display: flex;/* Entra neste caso para que o allign-items funcione abaixo (deixar flex a div) */
+        align-items: center;/* Alinha o texto na vertical */
+        margin: 0;
+    }
+
+    .conteudo {
+        width: 90%;
+        margin:auto; /* Ajuda a centralizar os 10% que sobra, para desgrudar o texto */
+        max-width: 800px; /*  Limitador para não esticar muito */
+    }
+
+    .conteudo h1{
+        text-transform: uppercase; /* Transforma em maiusculas */
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;/* Faz ele ser 1x o valor do elemento raiza (html) 180px */
+        margin-bottom: 1rem; /* Faz ele ser 1x o valor do elemento raiz (html) 3x 180px */
+
+    }
+
+    .conteudo p {
+        line-height: 2rem;
+        /* Espaço entre as linhas do paragrafo */
+    }
+
+    .cta {
+        font-family: 'Oswald', sans-serif;
+        text-decoration: none;
+        font-size: .8rem;
+        font-weight: 600;
+        background-color: rgb(255, 238, 60);
+        padding: 1.15rem 1.8rem;
+        line-height: 5,5rem;
+        color: #000;
+        letter-spacing: 3px;/* Cotrola o espaçamento entre as letras */
+        text-transform: uppercase;
+    }
+
+    /* Pseudo-classe before */
+    .cta::before{
+        content: "+";/* Adicionar o elemento + (via CSS) */
+        margin-right: 0.8rem;
+
+    }
+
+    .verde-agua {
+        background-color: #26ccca;
+        color: #fff;
+    }
+
+    #ux {
+        color: #fff;
+        background-image: url(imagens/h13-background-img-2-min.jpg);
+    }
+
+    #motion {
+        background-image: url(imagens/h13-background-img-3-min.jpg);
+        background-size: cover; /* Ajuda a imagem de fundo do tamnho do elemento*/
+        background-position-x: center; /* Ajusta a posição de imagem */
+    }
+
+    #bard {
+        background-image: url(imagens/h13-background-img-4-min.jpg);
+        color:#fff;
+    }
+
+    .text {
+        color: #999;
+    }
+
+    #print {
+        color:#fff;
+        background-image: url(imagens/h13-background-img-5-min.jpg);
+        background-size: cover; /* Ajuda a imagem de fundo do tamnho do elemento*/
+        background-position-x: center; /* Ajusta a posição de imagem */
+
+    }
+#produto{
+    background-image: url(imagens/h13-background-img-1-min.jpg);
+    background-size: cover; /* Ajuda a imagem de fundo do tamnho do elemento*/
+    background-position-x: center; /* Ajusta a posição de imagem */
+}
+
+#produto, #motion, #print {
+    background-attachment: fixed; /* Cria o efeito paralex */
+}
+
+.conteudo {
+    width: 50%;
+    max-width: 800px;
+    margin: 0;
+    margin-left: 4rem;
+}
+
+/* ___________________________________________________________ */
+/* div (WhatsApp) */
+
+.fixed {
+    position: fixed;
+    /* Relativa a view (htm todo) */
+    width: 65px;
+    height: 65px;
+    font-weight: bolder;
+
+    bottom: 90px;
+    right: 30px;
+
+
+
+}
+
+.fixed:hover {
+    background-color: green;
+    font-weight: bolder;
+    border-radius: 35px;
+}
+
+/* ___________________________________________________________ */
+/* Responsividade */
+
+/* Para telas acima de 768px */
+@media screen and (min-width:768px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    heder nav{
+        width: 70%;
+        max-width: 800px;
+    }
+    nav a{
+        font-size: 1.1rem; /* Aumenta a fonte quando tela maior 768px */
+        padding: 0.7rem 1.0rem;
+    }
+    
+    .conteudo h1 {
+        font-size: 5rem; /* Aumenta a fonte quando tela maior 768px */
+        padding: -0.6rem;
+    }
+}
